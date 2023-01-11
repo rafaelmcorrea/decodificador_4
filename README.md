@@ -20,12 +20,12 @@
 
 ##### imagem do projeto para desktop:
 
-<img style="width: 400px" src="img/img1.png">
+<img style="width: 400px" src="https://github.com/rafaelmcorrea/decodificador_4/blob/main/img/img1.PNG">
 
 ##### imagem do projeto para tablet:
 
-<img style="width: 300px" src="img/img2.png">
+<img style="width: 300px" src="https://github.com/rafaelmcorrea/decodificador_4/blob/main/img/img2.PNG">
 
 ##### imagem do projeto para mobile:
 
-<img style="width: 200px" src="img/img3.png">
+<img style="width: 200px" src="https://github.com/rafaelmcorrea/decodificador_4/blob/main/img/img3.PNG">

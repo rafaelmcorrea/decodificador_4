@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+:root{
+    --cor1: #80f2e7;
+    --cor2: #518c81;
+    --cor3: #323d40;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+body{
+    background: var(--cor3);
+    font-family: 'Sarala', sans-serif;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--cor1);
+}
+.logo{
+    position: absolute;
+    left: 3%;
+}
+.logo img{
+    height: 40px;
+}
+.titulo{
+    color: var(--cor1);
+    font-size: 1.3rem;
+}
+#sec-criptografar{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-criptografar{
+    height: 80%;
+}
+textarea{
+    margin: 20px 20px 10px 20px;
+    width: 90%;
+    border-radius: 10px;
+    padding: 30px 10px 10px 20px;
+    box-shadow: 5px 5px 10px rgba(16, 8, 8, 0.5);
+}
+textarea::placeholder{
+    color: var(--cor2);
+}
+.regra{
+    font-size: 0.7em;
+    color: var(--cor1)
+}
+.botoes{
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    width: 90%;
+    height: 30px;
+    margin: 3px;
+    font-size: 0.8em;
+    color: var(--cor1);
+    background-color: var(--cor3);
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid var(--cor2);
+    transition: 240ms;
+    cursor: pointer;
+}
+.btn:hover{
+    font-size: 0.9em;
+    box-shadow: 2px 2px 5px rgba(16, 8, 8, 0.466);
+}
+#sec-descriptografar{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-descriptografar{
+    height: 70%;
+}
+.input-descriptografar{
+    background-image: url('../img/senha.gif');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center center;
+}
+#btn-copiar{
+    margin: 20px;
+    display: none;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--cor1);
+    height: 10vh;
+    color: var(--cor1);
+}
+i{  
+    font-size: 1.5rem;
+    margin: 10px 2px;
+    color: var(--cor1);
+    transition: 240ms;
+}
+i:hover{
+    font-size: 1.7rem;
+}
+.copyright{
+    font-size: 0.6rem;
+}
+
+
+@media (min-width: 768px){
+    .logo img{
+        height: 60px;
+    }
+    .titulo{
+        font-size: 2.8rem;
+    }
+    textarea{
+        font-size: 1.2rem;
+    }
+    .regra{
+        font-size: 1rem;
+    }
+    .input-descriptografar{
+        background-size: 30%;
+    }
+    .botoes{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }    
+    .btn{
+        width: 45%;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .btn:hover{
+        font-size: 1.1rem;
+    }
+    i{  
+        font-size: 2rem;
+        color: var(--cor1);
+        transition: 240ms;
+    }
+    i:hover{
+        font-size: 2.1rem;
+    }
+    .copyright{
+        font-size: 0.7rem;
+    }
+    #btn-copiar{
+        width: 60%;
+    }
+}
+@media (min-width: 1024px){
+    .titulo{
+        font-size: 3rem;
+    } 
+    #sec-criptografar{
+        width: 65%;
+    }
+    #sec-descriptografar{
+        width: 35%;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    #sec-criptografar,
+    #sec-descriptografar {
+        height: 80vh;
+    }
+    .input-descriptografar{
+        height: 80%;
+    }
+    #btn-copiar{
+        margin-top: 38px;
+    }
+    .input-descriptografar{
+        background-size: 50%;
+    }
+
+}

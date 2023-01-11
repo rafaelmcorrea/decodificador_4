@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 :root{
     --cor1: #80f2e7;
@@ -16,17 +15,9 @@
 body{
     background: var(--cor3);
     font-family: 'Sarala', sans-serif;
-    font-weight: 400;
-    height: 100vh;
     position: relative;
-}
-.container{
-    max-width: 940px;
-    min-height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 header{
     width: 100%;
@@ -36,28 +27,30 @@ header{
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid var(--cor1);
-    padding: 10px;
 }
 .logo{
     position: absolute;
     left: 3%;
 }
 .logo img{
-    height: 80%;
+    height: 40px;
 }
 .titulo{
-    font-size: 2.5em;
     color: var(--cor1);
+    font-size: 1.3rem;
 }
-main{
-    width: 100%;
+#sec-criptografar{
+    height: 90vh;
     display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+}
+.input-criptografar{
+    height: 80%;
 }
 textarea{
-    width: 100%;
-    height: 70%;
+    margin: 20px 20px 10px 20px;
+    width: 90%;
     border-radius: 10px;
     padding: 30px 10px 10px 20px;
     box-shadow: 5px 5px 10px rgba(16, 8, 8, 0.5);
@@ -65,30 +58,27 @@ textarea{
 textarea::placeholder{
     color: var(--cor2);
 }
-#sec-criptografar{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-}
 .regra{
     font-size: 0.7em;
     color: var(--cor1)
 }
 .botoes{
+    margin: 10px;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .btn{
-    width: 168px;
-    height: 35px;
+    width: 90%;
+    height: 30px;
+    margin: 3px;
     font-size: 0.8em;
     color: var(--cor1);
     background-color: var(--cor3);
     border-radius: 5px;
     padding: 5px;
     border: 1px solid var(--cor2);
-    margin-left: 10px;
     transition: 240ms;
     cursor: pointer;
 }
@@ -96,79 +86,121 @@ textarea::placeholder{
     font-size: 0.9em;
     box-shadow: 2px 2px 5px rgba(16, 8, 8, 0.466);
 }
-#btncriptografar{
-    background-color: var(--cor2);
-}
 #sec-descriptografar{
-    width: 30%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+}
+.input-descriptografar{
+    height: 70%;
 }
 .input-descriptografar{
     background-image: url('../img/senha.gif');
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 60%;
     background-position: center center;
 }
 #btn-copiar{
-    width: 70%;
-    margin-top: 38px;
+    margin: 20px;
     display: none;
 }
 footer{
     width: 100%;
-    height: 10vh;
-    border-top: 1px solid var(--cor1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5px;
-    margin-bottom: 2%;
-}
-.img-rede{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    height: 45px;
+    border-top: 1px solid var(--cor1);
+    height: 10vh;
+    color: var(--cor1);
 }
-.img-rede img{
-    width: 30px;
-    margin-left: 10px;
+i{  
+    font-size: 1.5rem;
+    margin: 10px 2px;
+    color: var(--cor1);
     transition: 240ms;
 }
-.img-rede img:hover{
-    width: 33px;
+i:hover{
+    font-size: 1.7rem;
 }
 .copyright{
-    color: var(--cor1);
-    font-size: 0.7em;
+    font-size: 0.6rem;
 }
 
-@media (max-width: 600px){
+
+@media (min-width: 768px){
+    .logo img{
+        height: 60px;
+    }
     .titulo{
-        font-size: 1.6em;
+        font-size: 2.8rem;
     }
-    #sec-criptografar{
-        width: 60%;
-    }
-    #sec-descriptografar{
-        width: 40%;
+    textarea{
+        font-size: 1.2rem;
     }
     .regra{
-        font-size: 0.6em;
+        font-size: 1rem;
+    }
+    .input-descriptografar{
+        background-size: 30%;
     }
     .botoes{
-        flex-direction: column;
-        align-items: center;
-    }
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }    
     .btn{
-        width: 80%;
-        margin-top: 10px;
+        width: 45%;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .btn:hover{
+        font-size: 1.1rem;
+    }
+    i{  
+        font-size: 2rem;
+        color: var(--cor1);
+        transition: 240ms;
+    }
+    i:hover{
+        font-size: 2.1rem;
+    }
+    .copyright{
+        font-size: 0.7rem;
     }
     #btn-copiar{
-        width: 80%;
-        margin-top: 46px;
+        width: 60%;
     }
+}
+@media (min-width: 1024px){
+    .titulo{
+        font-size: 3rem;
+    } 
+    #sec-criptografar{
+        width: 65%;
+    }
+    #sec-descriptografar{
+        width: 35%;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    #sec-criptografar,
+    #sec-descriptografar {
+        height: 80vh;
+    }
+    .input-descriptografar{
+        height: 80%;
+    }
+    #btn-copiar{
+        margin-top: 38px;
+    }
+    .input-descriptografar{
+        background-size: 50%;
+    }
+
 }
